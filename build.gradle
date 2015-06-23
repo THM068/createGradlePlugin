@@ -1,11 +1,10 @@
 apply plugin: 'groovy'
+apply plugin: 'maven'
 
 dependencies {
     compile gradleApi()
     compile localGroovy()
 }
-
-apply plugin: 'maven'
 
 repositories {
     mavenCentral()
@@ -36,7 +35,7 @@ uploadArchives {
         mavenDeployer {
             configuration = configurations.deployerJars
             repository (url: 'scp://178.79.147.72/releases') {
-            authentication(userName: 'root', password: 'lionel22')
+                authentication(userName: '', password: '')
             }
         }
     }
