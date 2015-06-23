@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.gradle.GreetingTaskTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-06-23T13:48:31" hostname="UOS-205716" time="0.0">
+  <properties/>
+  <testcase name="canAddTaskToProject" classname="org.gradle.GreetingTaskTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
