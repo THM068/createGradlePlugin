@@ -17,7 +17,7 @@ configurations {
 
 dependencies {
     testCompile 'junit:junit:4.12'
-    compile "org.apache.maven.wagon:wagon-ssh:2.2"
+    deployerJars "org.apache.maven.wagon:wagon-ssh:2.2"
 }
 
 group = 'org.gradle'
@@ -35,7 +35,7 @@ uploadArchives {
     repositories {
         mavenDeployer {
             configuration = configurations.deployerJars
-            repository (url: 'http://178.79.147.72/releases') {
+            repository (url: 'scp://178.79.147.72/releases') {
             authentication(userName: 'root', password: 'lionel22')
             }
         }

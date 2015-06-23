@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="org.gradle" module="customPlugin" revision="1.0-SNAPSHOT" status="integration" publication="20150623144831">
+  <info organisation="org.gradle" module="customPlugin" revision="1.0-SNAPSHOT" status="integration" publication="20150623150828">
     <description/>
   </info>
   <configurations>
@@ -16,7 +16,7 @@
     <artifact name="customPlugin" type="jar" ext="jar" conf="archives,runtime"/>
   </publications>
   <dependencies>
-    <dependency org="org.apache.maven.wagon" name="wagon-ssh" rev="2.2" conf="compile-&gt;default"/>
+    <dependency org="org.apache.maven.wagon" name="wagon-ssh" rev="2.2" conf="deployerJars-&gt;default"/>
     <dependency org="junit" name="junit" rev="4.12" conf="testCompile-&gt;default"/>
   </dependencies>
 </ivy-module>
